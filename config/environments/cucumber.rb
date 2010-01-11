@@ -21,8 +21,7 @@ config.action_mailer.delivery_method = :test
 
 unless File.directory?(File.join(Rails.root, 'vendor/plugins/cucumber'))
   config.gem 'cucumber',
-    :lib     => false,
-    :version => '>=0.4.2'
+    :lib     => false
 end
 
 unless File.directory?(File.join(Rails.root, 'vendor/plugins/webrat'))
